@@ -5,9 +5,15 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+  theme: {    
     extend: {
-      container:{
+      screens: {
+        sm: '480px',
+      },
+      fontFamily:{
+        nunito: 'Nunito, sans-serif'
+      },
+      container:{                
         center: true,
         padding: {
           DEFAULT: '1rem',
@@ -16,6 +22,9 @@ module.exports = {
           xl: '5rem',
           '2xl': '6rem',
         },     
+      },
+      colors:{
+        mycolor:'#555',
       }
     },
   },
